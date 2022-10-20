@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Penentuan Harga Tiket</title>
+    </head>
+    <body>
+        <script language="Javascript">
+    
+                var kelas = prompt("Masukkan Kelas Yang Ingin Anda Pilih E / B / V");
+                var nomorKelas = prompt("Masukkan Nomor Kelas Anda 1 / 2");
+                var harga = 0;
+
+                if(kelas == "E","e"){
+                    if (nomorKelas == 1){
+                        harga = 220000;
+                    }
+                    else if (nomorKelas == 2){
+                        harga = 175000;
+                    }
+                }
+                else if(kelas == "B","b"){
+                    if (nomorKelas == 1){
+                        harga = 350000;
+                    }
+                    else if (nomorKelas == 2){
+                        harga = 225000;
+                    }
+                }
+
+                else if(kelas == "V", "v"){
+                    if (nomorKelas == 1){
+                        harga = 550000;
+                    }
+                    else if (nomorKelas == 2){
+                        harga = 470000;
+                    }
+                }
+                else{
+                    harga = 0;
+                }
+                
+                document.write("Harga Tiket Anda Adalah Rp " + harga);
+
+        </script>
+    </body>
+</html>
