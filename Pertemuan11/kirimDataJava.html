@@ -1,0 +1,42 @@
+<h1>Baca nilai / Value Input HTML</h1>
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<form>
+    <table cellspacing="10">
+        <tr>
+            <td>NPM</td>
+            <td><input type="text" id="a1"></td>
+        </tr>
+        <tr>
+            <td>Nama Mahasiswa</td>
+            <td><input type="text" id="a2"></td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+            <td><input type="text" id="a3"></td>
+        </tr>
+        <tr>
+            <td>Jumlah SKS Yang Diambil</td>
+            <td><input type="text" id="a4"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Kirim Data" onclick="pilih(this.form)"></td>
+        </tr>
+    </table>
+
+</form>
+
+<script>
+    //ini fungsi yang bernama pilih
+    function pilih(obj) {
+        var a = obj.a1.value
+        var b = obj.a2.value
+        var c = obj.a3.value
+        var d = obj.a4.value
+        document.write("<h1>")
+        document.write("<br>Nomor Pokok Mahasiswa : ", a)
+        document.write("<br>Nama Jurusan          : ", b)
+        document.write("<br>Jurusan               : ", c)
+        document.write("<br>Jumlah SKS Yang       : ", d)
+    }
+</script>
