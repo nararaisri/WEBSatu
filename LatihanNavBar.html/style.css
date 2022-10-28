@@ -1,0 +1,62 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: Impact;
+}
+
+.menu-bar{
+    background-color: lemonchiffon;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li{
+    width: 100px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.active, .menu-bar ul li:hover
+{
+    background: yellowgreen;
+    border-radius: 3px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: yellowgreen;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
